@@ -25,7 +25,7 @@ const EventHandling = () => {
 
         <button
           style={{ color: "white" }}
-          onClick={() => handleAlertButton3("Code with me")}
+          onClick={() => handleAlertButton3  ("Code with me")}
         >
           Click Here 3
         </button>
