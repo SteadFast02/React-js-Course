@@ -3,6 +3,7 @@ import StateConcept26 from "./course3/stateConcept26";
 import StateDepth27 from "./course3/stateDepth27";
 import StateChallenge29 from "./course3/stateChallenge29";
 import DerivedState30 from "./course3/derivedState30";
+import LiftStateUp31 from "./course3/liftStateUp31";
 
 const course3 = () => {
   return (
@@ -14,7 +15,9 @@ const course3 = () => {
 
       {/* <StateChallenge29 /> */}
 
-      <DerivedState30 />
+      {/* <DerivedState30 /> */}
+
+      <LiftStateUp31 />
     </>
   );
 };
