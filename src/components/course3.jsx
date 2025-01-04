@@ -1,14 +1,17 @@
 import React from "react";
 import StateConcept26 from "./course3/stateConcept26";
 import StateDepth27 from "./course3/stateDepth27";
+import StateChallenge29 from "./course3/stateChallenge29";
 
 const course3 = () => {
   return (
     <>
       {/* <StateConcept26 /> */}
 
-      <StateDepth27 />
-      <ShiblingComponent27 />
+      {/* <StateDepth27 />
+      <ShiblingComponent27 /> */}
+
+      <StateChallenge29 />
     </>
   );
 };
