@@ -114,6 +114,13 @@ header h1 {
     transition: color 0.3s ease;
 }
 
+.deleteall-btn {
+    background-color: #f44336;
+    color: white;
+    padding: .7rem;
+    font-size: smaller;
+}
+
 .check-btn:hover {
     color: #4caf50;
 }

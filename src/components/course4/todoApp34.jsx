@@ -31,7 +31,7 @@ const TodoApp34 = () => {
   //     setCurrDate(`${formatedDate} - ${formatedTime}`);
   //   }, 1000);
 
-//   console.log("Hello");
+  //   console.log("Hello");
   useEffect(() => {
     const interval = setInterval(() => {
       const now = new Date();
@@ -41,6 +41,16 @@ const TodoApp34 = () => {
     }, 1000);
     return () => clearInterval(interval);
   }, []);
+
+  const handleDeleteTodo = (value) => {
+    // console.log(curTask);
+    const updateTask = task.filter((curr) => curr !== value);
+    setTask(updateTask);
+  };
+
+  const handleDeleteAllTodo = () => {
+    setTask([]);
+  };
 
   return (
     <section className="todo-container">
@@ -79,13 +89,21 @@ const TodoApp34 = () => {
                 <button className="check-btn">
                   <MdCheck />
                 </button>
-                <button className="delete-btn">
+                <button
+                  className="delete-btn"
+                  onClick={() => handleDeleteTodo(curTask)}
+                >
                   <MdDeleteForever />
                 </button>
               </li>
             );
           })}
         </ul>
+      </section>
+      <section>
+        <button className="deleteall-btn" onClick={handleDeleteAllTodo}>
+          Clear All
+        </button>
       </section>
     </section>
   );
