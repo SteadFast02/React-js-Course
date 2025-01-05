@@ -3,6 +3,15 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .toggle-switch {
@@ -15,6 +24,11 @@ body {
     padding: 5px;
     margin-top: 5rem;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transition: background-color 0.3s linear;
+}
+
+.toggle-switch.on {
+    background-color: #4caf50;
 }
 
 .switch {
@@ -23,6 +37,7 @@ body {
     border-radius: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: white;
     font-weight: bold;
     position: absolute;
@@ -33,21 +48,16 @@ body {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.on {
+.switch.on {
     background-color: #4caf50;
     transform: translateX(50px);
-    -webkit-transform: translateX(50px);
-    -moz-transform: translateX(50px);
-    -ms-transform: translateX(50px);
-    -o-transform: translateX(50px);
 }
 
-.off {
+.switch.off {
     background-color: #f44336;
-    transform: translateX(0);
 }
 
 .switch-state {
-    margin: 0 10px;
+    margin: 0 5px;
     text-transform: uppercase;
 }
