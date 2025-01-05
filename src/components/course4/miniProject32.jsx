@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./miniProject32.css";
+import { FaToggleOff, FaToggleOn } from "react-icons/fa";
 
 const MiniProject32 = () => {
   const [isOn, setIsOn] = useState(false);
@@ -10,6 +11,10 @@ const MiniProject32 = () => {
 
   return (
     <div className="container">
+      <div onClick={handleToggleSwitch}>
+        {isOn ? <FaToggleOn /> : <FaToggleOff />}
+      </div>
+
       <div
         className={`toggle-switch ${isOn ? "on" : "off"}`}
         onClick={handleToggleSwitch}
