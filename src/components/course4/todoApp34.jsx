@@ -50,6 +50,7 @@ const TodoApp34 = () => {
 
   const handleDeleteAllTodo = () => {
     setTask([]);
+    setInputValue("");
   };
 
   return (
