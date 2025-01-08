@@ -21,7 +21,7 @@ const TodoAppMain = () => {
 
     if (ifTodoContentMatched) return;
 
-    setTask((prevTask) => [...prevTask, { id, content, checked }]);
+    setTask((prevTask) => [{ id, content, checked }, ...prevTask]);
   };
 
   setLocalStorageTodoData(task);

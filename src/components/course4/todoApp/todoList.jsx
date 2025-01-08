@@ -19,6 +19,7 @@ const TodoList = ({
             <MdCheck style={{ color: "#4caf50" }} />
           )}
         </button>
+        <input type="text" name="" id="" />
         <button className="delete-btn" onClick={() => onHandleDeleteTodo(data)}>
           <MdDeleteForever />
         </button>
