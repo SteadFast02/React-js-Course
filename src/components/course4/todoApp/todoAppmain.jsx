@@ -3,9 +3,13 @@ import "./todoApp.css";
 import TodoForm from "./todoForm";
 import TodoList from "./todoList";
 import TodoDate from "./todoDate";
+import {
+  getLocalStorageData,
+  setLocalStorageTodoData,
+} from "./todoLocalStorage";
 
 const TodoAppMain = () => {
-  const [task, setTask] = useState([]);
+  const [task, setTask] = useState(() => getLocalStorageData());
   const handleSubmitForm = (inputValue) => {
     const { id, content, checked } = inputValue;
     if (!content) return;
@@ -19,6 +23,8 @@ const TodoAppMain = () => {
 
     setTask((prevTask) => [...prevTask, { id, content, checked }]);
   };
+
+  setLocalStorageTodoData(task);
 
   const handleDeleteTodo = (value) => {
     // console.log(curTask);
