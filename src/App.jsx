@@ -4,6 +4,7 @@ import Course2 from "./components/course2";
 import Course3 from "./components/course3";
 import Course4 from "./components/course4";
 import Course5 from "./components/course5";
+import Course6 from "./components/course6";
 
 function App() {
   return (
@@ -21,7 +22,10 @@ function App() {
       {/* <Course4 /> */}
 
       {/* course 5 */}
-      <Course5 />
+      {/* <Course5 /> */}
+
+      {/* course 5 */}
+      <Course6 />
     </>
   );
 }
