@@ -4,6 +4,7 @@ import Challenge2 from "./course6/challenge2";
 import CleanUpFunction53 from "./course6/cleanUpFunction53";
 import NotFetchApiData from "./course6/notFetchApiData54";
 import FetchApiData55 from "./course6/fetchApiData55";
+import { Pokemon } from "./course6/pokemonProject/pokemon";
 
 const Course6 = () => {
   return (
@@ -12,7 +13,9 @@ const Course6 = () => {
       {/* <Challenge2 /> */}
       {/* <CleanUpFunction53 /> */}
       {/* <NotFetchApiData /> */}
-      <FetchApiData55 />
+      {/* <FetchApiData55 /> */}
+
+      <Pokemon />
     </>
   );
 };

@@ -1,5 +1,5 @@
 /* Reset CSS */
-body,
+/* body,
 h1,
 ul,
 li,
@@ -9,16 +9,16 @@ button {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-}
+} */
 
-/* Body Styling */
-body {
+/*  Styling */
+/* body {
     background-color: #f0f4f8;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
+} */
 
 /* Todo Container */
 .todo-container {

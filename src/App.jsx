@@ -24,7 +24,7 @@ function App() {
       {/* course 5 */}
       {/* <Course5 /> */}
 
-      {/* course 5 */}
+      {/* course 6 */}
       <Course6 />
     </>
   );
