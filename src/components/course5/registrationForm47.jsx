@@ -17,7 +17,14 @@ const RegistrationPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Data Submitted: ", formData);
+    const loginData = {
+      firstName,
+      lastName,
+      email,
+      password,
+      phone,
+    };
+    console.log("Form Data Submitted: ", loginData);
     // Add form submission logic here
   };
 
