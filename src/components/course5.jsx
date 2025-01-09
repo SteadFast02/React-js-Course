@@ -4,6 +4,7 @@ import Hook_useState44 from "./course5/hook_useState44";
 import Mini_project45 from "./course5/miniProject/mini_project45";
 import RegistrationPage from "./course5/registrationForm47";
 import LoginForm49 from "./course5/loginForm49";
+import ContactPage51 from "./course5/contactForm51";
 
 const Course5 = () => {
   return (
@@ -16,7 +17,9 @@ const Course5 = () => {
 
       {/* <RegistrationPage /> */}
 
-      <LoginForm49 />
+      {/* <LoginForm49 /> */}
+
+      <ContactPage51 />
     </div>
   );
 };
