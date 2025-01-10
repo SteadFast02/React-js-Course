@@ -9,6 +9,7 @@ import Course7 from "./components/course7";
 import ContextProvider from "./components/course7/api_Context64";
 import ContextApiHome from "./components/course7/api_HomeContext64";
 import SwitchMode from "./components/course7/switchMode68";
+import Course8 from "./components/course8";
 
 function App() {
   return (
@@ -38,7 +39,10 @@ function App() {
         <ContextApiHome />
       </ContextProvider> */}
 
-      <SwitchMode />
+      {/* <SwitchMode /> */}
+
+      {/* course 8 */}
+      <Course8 />
     </>
   );
 }
