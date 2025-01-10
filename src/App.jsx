@@ -6,6 +6,8 @@ import Course4 from "./components/course4";
 import Course5 from "./components/course5";
 import Course6 from "./components/course6";
 import Course7 from "./components/course7";
+import ContextProvider from "./components/course7/api_Context64";
+import ContextApiHome from "./components/course7/api_HomeContext64";
 
 function App() {
   return (
@@ -29,7 +31,11 @@ function App() {
       {/* <Course6 /> */}
 
       {/* course 7 */}
-      <Course7 />
+      {/* <Course7 /> */}
+
+      <ContextProvider>
+        <ContextApiHome />
+      </ContextProvider>
     </>
   );
 }
