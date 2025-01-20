@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
-import Count_memo71 from "./count_memo71";
+// import Count_memo71 from "./count_memo71";
+import { Count_memo71 } from "./count_memo71";
 
 const Hook_memo71 = () => {
   const renderedCount = useRef(0);
